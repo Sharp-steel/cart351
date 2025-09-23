@@ -39,18 +39,16 @@ for item in response_data_feed:
 # print(type(item)) # Returns as <class 'str'>
 aqi = (response_data_feed['aqi']) # Accesses the aqi and stores it in a variable
 dominentpol = (response_data_feed['dominentpol']) # Accesses the dominentpol and stores it in a variable
-print(aqi) # Represents Live Air Quality
-print(dominentpol) # Represents the Dominent Pollutent Value
-
 iaqi = (response_data_feed['iaqi']) # Accesses iaqi and stores it in a variable
+print(aqi) # Represents Live Air Quality
+print(dominentpol) # Represents the Dominent Pollutent Value key and returns it as a string
 print(iaqi.keys()) # All of the elements listed as keys
 
-for item in iaqi:
-    print(item) # Prints the name of each pollutent element
 print(type(dominentpol)) # Returns as <class 'str'>
 print(type(iaqi)) #Returns as <class 'dict'>
 
-
+dominent_value = iaqi[dominentpol]['v'] # Takes the data stored in the iaqi variable, as well as the dominent poll variable and takes the value from the corresponding v key
+print(dominent_value) # Returns the value of 24
 
 # ----------------- STEP 7 --------------------- #
 
