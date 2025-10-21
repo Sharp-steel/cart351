@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+     <h3>** T1  **</h3>
+    <section class="t1">
+        <!-- stuff goes in here -->
+         <p>Here are a couple of donuts:</p>
+         <br>
+         <div class = "img_div">
+            <img src = "{{url_for('static' , filename ='images/'+imgOne)}}"/>
+            <img src = "{{url_for('static' , filename ='images/'+imgTwo)}}"/>
+         </div>
+         <div class="donut1-t1">
+            {% for item in flavours %}
+                {% if item =="Chocolate" %}
+                    <p> This donut is: {{item}} flavoured.</p>
+                {% endif %}
+            {% endfor %}
+            {% for item in toppings %}
+                {% if item =="Sugar" %}
+                    <p> This donut has: {{item}} toppings.</p>
+                {% endif %}
+            {% endfor %}
+         </div>
+         <div class="donut2-t1">
+            {% for item in flavours %}
+                {% if item =="Regular" %}
+                    <p> This donut is: {{item}} flavoured.</p>
+                {% endif %}
+            {% endfor %}
+            {% for item in toppings %}
+                {% if item =="Sprinkle" %}
+                    <p> This donut has: {{item}} toppings.</p>
+                {% endif %}
+            {% endfor %}
+         </div>
+    </section>
+{% endblock %}

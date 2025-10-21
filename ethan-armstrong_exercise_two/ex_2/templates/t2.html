@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+     <h3>** T2  **</h3>
+    <section>
+        <!-- stuff goes in here -->
+         <div class= "formContainer">
+<!--form done using more current tags... -->
+<form id = "t2Form" action = "{{url_for('thank_you_t2')}}">
+<!-- group the related elements in a form -->
+<fieldset>
+ <p>
+    <label>Enter Your Name >:) </label>
+    <input id = "text" type="text" size="24" maxlength = "40" name = "name" required> 
+</p>
+ 
+<p>
+    <label>What is Your Favourite Animal?:</label>
+    <input id = "text" type="text" size="24" maxlength = "40" name = "animal" required> 
+</p>
+<p>
+    <label>State Your Reasoning:</label>
+    <textarea type = "text" rows="4" cols="50" name = "reasoning" required></textarea>
+</p>
+ <p>
+    <input id = "submit" type = "submit" name = "submit" value = "Submit To Me >:)" id = subButton/>
+</p>
+ </fieldset>
+ 
+</form>
+</div>
+    </section>
+{% endblock %}
