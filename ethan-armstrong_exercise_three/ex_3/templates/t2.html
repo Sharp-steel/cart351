@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block scriptblock %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <h3>Clicking Simulator!</h3>
+    <br>
+    <p>The Goal: Keep Clicking Inside the Square!</p>
+
+    <div class="container">
+        <section>
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name">
+            <br>
+            <br>
+            <p id="timer">Time left: 10s</p>
+            <div id="square"></div>
+            <p id="score">Score: 0</p>
+            <br>
+            <button id="start-button">Start Game</button>
+            <br>
+            <div id="message"></div>
+        </section>
+    </div>
+{% endblock %}
