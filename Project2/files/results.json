@@ -1,0 +1,22 @@
+{
+  "Which Do You Prefer: Cats or Dogs?": {
+    "Cats": 0,
+    "Dogs": 0
+  },
+  "Which Do You Prefer: Coffee or Tea?": {
+    "Coffee": 0,
+    "Tea": 0
+  },
+  "Which Do You Prefer: The Morning or The Afternoon?": {
+    "Morning": 0,
+    "Afternoon": 0
+  },
+  "Which Do You Prefer: Pepperoni or Cheese Pizza?": {
+    "Pepperoni": 0,
+    "Cheese": 0
+  },
+  "Which Do You Prefer: The Old or The New?": {
+    "Old": 0,
+    "New": 0
+  }
+}

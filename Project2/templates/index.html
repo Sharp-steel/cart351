@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1 id="question"></h1>
+        <p> Select which option below is your personal preference! </p>
+        <div class="buttons">
+            <button class="choice" id="button1"></button>
+            <button class="choice" id="button2"></button>
+        </div>
+        <button id="next" class="hidden">Next</button>
+        <div id="canvasContainer"></div>\
+    </div>
+{% endblock %}
+
+{% block scriptblock %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
