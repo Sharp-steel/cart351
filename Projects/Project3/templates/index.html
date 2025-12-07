@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div id="globe-container">
+    <svg id="globe"></svg>
+  </div>
+
+  <div id="modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id="modal-panel">
+      <button id="modal-close" title="Close">X</button>
+      <h2 id="modal-title">Country</h2>
+
+      <div id="descriptions-list">
+        <h3>Descriptions</h3>
+        <ul id="descriptions-ul"></ul>
+      </div>
+      <div id="add-user">
+        <h3>Add your username:</h3>
+        <textarea id="username-input" placeholder="Write your username here..." required rows="1"></textarea>
+      </div>
+      <div id="add-description">
+        <h3>In one sentence, what can you describe about this country?</h3>
+        <textarea id="description-input" placeholder="Write a single sentence describing this country..." rows="2"></textarea>
+        <div class="modal-actions">
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- d3.js Library for World Map -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock %}

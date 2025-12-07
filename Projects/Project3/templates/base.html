@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Project 3 - Ethan Armstrong{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<header>
+  <h1>The Interactive Worldwide Network</h1>
+  <p>A place to redefine culture and history.</p>
+</header>
+<body>
+  {% block content %}{% endblock %}
+</body>
+</html>

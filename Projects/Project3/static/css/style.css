@@ -1,0 +1,169 @@
+header {
+  margin: 0;
+  background: #3d6095;
+  color: #fff;
+  font-family: "Science Gothic", serif;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: #728c9f;
+  color: #fff;
+  font-family: "Bitcount Prop Single", Arial, sans-serif;
+  overflow: hidden;
+}
+
+p {
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Bitcount Prop Single", Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 18px 0 6px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Science Gothic", serif;
+}
+
+h3 {
+  font-family: "Science Gothic", serif;
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+
+#globe-container {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#globe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+}
+
+.country {
+  fill: #1b1b1b;
+  stroke: #585858; 
+  stroke-width: 0.3px;
+  transition: fill 350ms ease;
+}
+
+.country:hover {
+  stroke: #ffffffaa;
+  stroke-width: 0.8px;
+}
+
+.borders {
+  fill: none;
+  stroke: rgba(255,255,255,0.08);
+  stroke-width: 0.6px;
+  pointer-events: none;
+}
+
+#globe:active {
+  cursor: grabbing;
+}
+
+#modal.hidden { display: none; }
+#modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65));
+  z-index: 2000;
+}
+
+#modal-panel {
+  width: min(720px, 92vw);
+  max-height: 86vh;
+  overflow: auto;
+  background: linear-gradient(180deg, #0f1113, #111215);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+#modal-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#descriptions-ul {
+  list-style: none;
+  padding: 6px 0 14px 0;
+  margin: 0;
+}
+
+#descriptions-ul li {
+  background: rgba(255,255,255,0.02);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #ddd;
+  font-family: "Bitcount Prop Single", Arial, sans-serif;
+}
+
+#description-input {
+  width: 97%;
+  resize: vertical;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 10px;
+  background: rgba(255,255,255,0.02);
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+  font-family: "Bitcount Prop Single", Arial, sans-serif;
+}
+
+#username-input {
+  width: 50%;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 10px;
+  background: rgba(255,255,255,0.02);
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  resize: none;
+  font-family: "Bitcount Prop Single", Arial, sans-serif;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  background: linear-gradient(180deg,#ffd56b,#ffb84a);
+  border: none;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Science Gothic", serif;
+}
