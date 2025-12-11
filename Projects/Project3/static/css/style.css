@@ -53,7 +53,6 @@ h3 {
 }
 
 .country {
-  fill: #1b1b1b;
   stroke: #585858; 
   stroke-width: 0.3px;
   transition: fill 350ms ease;
